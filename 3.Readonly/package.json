@@ -1,5 +1,5 @@
 {
-  "name": "2.guard-types",
+  "name": "3.readonly",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
