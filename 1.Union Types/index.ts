@@ -1,7 +1,7 @@
 
 
-function showMessage(message: string | string[] | (() => string)) {
-//function showMessage(message){   
+//function showMessage(message: string | string[] | (() => string)) {
+function showMessage(message){   
     if(Array.isArray(message)) {
         message.forEach(m=>{
             console.log(m);
