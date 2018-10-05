@@ -41,6 +41,10 @@ function showMessageBackwards(message: string | string[] | (() => string) | Mess
     }
 }
 
+function showMessageTwice(message: string | string[] | (() => string) | Message) {
+   showMessage(message);
+   showMessage(message);
+}
 function reverse(str){
     return str.split("").reverse().join("");
   }
@@ -64,3 +68,7 @@ const messageObject = new Message();
 messageObject.message = 'hello world object';
 messageObject.isYell = true;
 showMessageBackwards(messageObject);
+showMessageTwice(messageLiteral);
+showMessageTwice(messageArray);
+showMessageTwice(messagefunction);
+showMessageTwice(messageObject);
