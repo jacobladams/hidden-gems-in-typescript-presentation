@@ -1,14 +1,25 @@
+// ts-nocheck
+// ts-check
+// ts-ignore
+
+
 var someOtherLibrary = (function(){
 
 	function log (message) {
 		console.log(message);
 	}
 	
+	// /**
+	//  * @param {number} [a]
+	//  * @param {number} [b]
+	//  * @returns {number}
+	//  */
 	function divide(a, b) {
 		return a / b;
 	}
 
 	function divideAndLog(a, b) {
+		// /** @type {number} */
 		var answer = divid(a,b);
 		this.log(' ' + a + 'divided by ' + b + ' is ' + answer);
 	}
@@ -20,3 +31,4 @@ var someOtherLibrary = (function(){
 		divideAndLog : divideAndLog
 	};
 })();
+
